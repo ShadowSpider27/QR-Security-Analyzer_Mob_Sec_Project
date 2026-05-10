@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mob_sec_proj</string>
+    <string name="qr_security_analyzer">QR Security Analyzer</string>
+
+    <!-- App description strings (used in main/about screens) -->
+    <string name="app_description">
+        This application scans QR codes and analyzes URLs for phishing, malicious redirects,
+        and unsafe patterns using heuristic rules and threat intelligence APIs.
+    </string>
+
+
+    <string name="what_it_detects">
+        What we use:\n
+        • Google Safe Browsing checks\n
+        • PhishTank verification\n
+        • URL Resolution\n
+        • Heuristics Analysis of URL\n
+        • TLS Certification Validation\n
+    </string>
+    <string name="final_risk_scoring">
+        Final Risk Scoring:\n
+        • Dangerous >= 5\n
+        • Suspicious >= 2\n
+        • else Safe\n
+    </string>
+
+    <string name="api_scoring">
+        API Check Scoring:\n
+        • Google Safe Browsing Hit = 5\n
+        • PhishTank Hit = 5\n
+    </string>
+
+    <string name="cert_scoring">
+        TLS Validation Scoring:\n
+        • TLS Handshake Fail = 3\n
+        • Cert Expired = 2\n
+        • Cert Domain Mismatch = 2\n
+        • Self-Signed Cert = 1\n
+        • Cert Not Yet Valid = 1\n
+    </string>
+
+    <string name="heuristics_scoring">
+        Heuristics Scoring:\n
+        • More Than 5 Redirects = 2\n
+        • URl is shortened = 1\n
+        • URL uses IP Address = 2\n
+        • URL uses HTTP instead of HTTPS = 1\n
+        • URl uses ftp, file or javascript = 1\n
+        • URl uses keyword = 1\n
+    </string>
+
+    <!-- Navigation -->
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="scan_another_qr_code">Scan Another QR Code</string>
+    <string name="view_results_screen">View Results</string>
+    <string name="return_to_home">Return To Home</string>
+    <string name="open_in_browser">Open in Browser</string>
+    <string name="actions">Actions</string>
+    <!-- Titles -->
+    <string name="scanned_result">Scanned Result</string>
+
+    <!-- States -->
+    <string name="checking">Checking…</string>
+    <string name="loading">Loading…</string>
+    <string name="none">None</string>
+    <string name="_0">0</string>
+
+    <!-- URL section -->
+    <string name="original_url">Original URL</string>
+    <string name="resolved_url">Resolved URL</string>
+    <string name="not_resolved">Not resolved</string>
+    <string name="redirect_hops">Redirect Hops</string>
+    <string name="redirect_chain">Redirect Chain</string>
+
+    <string name="invalid_url_message">
+        Not a valid URL. This QR code does not contain a web link.
+    </string>
+
+    <!-- Safety verdict section -->
+    <string name="risk_safe">Safe</string>
+    <string name="risk_suspicious">Suspicious</string>
+    <string name="risk_dangerous">Dangerous</string>
+    <string name="risk_unknown">Unknown</string>
+
+    <!-- Google Safe Browsing -->
+    <string name="google_safe_browsing">Google Safe Browsing</string>
+    <string name="gsb_safe">No threats detected</string>
+    <string name="gsb_dangerous">Threat detected</string>
+    <string name="gsb_timeout">Request timed out</string>
+    <string name="gsb_error_network">Network error</string>
+    <string name="gsb_error">Check unavailable</string>
+
+    <!-- PhishTank -->
+    <string name="phish_tank">PhishTank</string>
+    <string name="phish_yes">Confirmed PhishTank</string>
+    <string name="phish_suspicious">Suspicious (unverified report)</string>
+    <string name="phish_no_unknown">No / Unknown</string>
+    <string name="phish_timeout">Request timed out</string>
+    <string name="phish_error">Check unavailable</string>
+
+    <!-- Heuristics -->
+    <string name="heuristics">Heuristics</string>
+    <string name="score">Score</string>
+    <string name="warnings">Heuristics Warnings:</string>
+    <string name="heuristics_score">Heuristic Score</string>
+
+    <!-- Certificate section labels -->
+    <string name="certificate">Certificate</string>
+    <string name="cert_label_status">Status</string>
+    <string name="cert_label_issuer">Issuer</string>
+    <string name="cert_label_expiry">Validity</string>
+    <string name="cert_label_self_signed">Self-Signed</string>
+    <string name="cert_label_domain_match">Domain Match</string>
+
+    <!-- Certificate values -->
+    <string name="cert_valid">Certificate valid</string>
+    <string name="cert_invalid">Certificate invalid</string>
+    <string name="cert_handshake_failed">TLS handshake failed</string>
+    <string name="cert_no_https">No HTTPS URL available</string>
+    <string name="cert_timeout">Check timed out</string>
+    <string name="cert_not_expired">Valid period OK</string>
+    <string name="cert_expired">Expired</string>
+    <string name="cert_not_yet_valid">Not yet valid</string>
+    <string name="cert_self_signed_no">CA-issued</string>
+    <string name="cert_self_signed_yes">Self-signed (untrusted)</string>
+    <string name="cert_domain_match_yes">Domain matches</string>
+    <string name="cert_domain_match_no">Domain mismatch</string>
+    <string name="api_checks">API Checks</string>
+    <string name="certificate_checks">Certificate Checks</string>
+    <string name="validity">Validity</string>
+
+</resources>
